@@ -1,100 +1,49 @@
 .documents {
-  background-color: #171919;
-  padding-top: 225px;
+	background-color: #171919;
+	padding-top: 225px;
 
-  @media (max-width: $md1+px) {
-    padding-top: 200px;
-  }
-  @media (max-width: $md2+px) {
-    padding-top: 175px;
-  }
-  @media (max-width: $md3+px) {
-    padding-top: 150px;
-  }
-  @media (max-width: $md4+px) {
-    padding-top: 125px;
-  }
+	@media (max-width: $md1+px) {
+		padding-top: 200px;
+	}
+	@media (max-width: $md2+px) {
+		padding-top: 175px;
+	}
+	@media (max-width: $md3+px) {
+		padding-top: 150px;
+	}
+	@media (max-width: $md4+px) {
+		padding-top: 125px;
+	}
 
-  &__content {
-  }
+	&__content {
+	}
 
-  &__title {
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 35px;
-    font-weight: 900;
-    text-align: left;
-    margin: 0px 0px 96px 0px;
+	&__title {
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 35px;
+		font-weight: 900;
+		text-align: left;
+		margin: 0px 0px 96px 0px;
 
-    @media (max-width: $md1+px) {
-      margin: 0px 0px 86px 0px;
-      font-size: 33px;
-    }
-    @media (max-width: $md2+px) {
-      margin: 0px 0px 76px 0px;
-      font-size: 31px;
-    }
-    @media (max-width: $md3+px) {
-      margin: 0px 0px 66px 0px;
-      font-size: 28px;
-    }
-    @media (max-width: $md4+px) {
-      margin: 0px 0px 56px 0px;
-      font-size: 25px;
-    }
-  }
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 86px 0px;
+			font-size: 33px;
+		}
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 76px 0px;
+			font-size: 31px;
+		}
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 66px 0px;
+			font-size: 28px;
+		}
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 56px 0px;
+			font-size: 25px;
+		}
+	}
 
-  &__body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @media (max-width: 550px) {
-      flex-direction: column;
-    }
-  }
-
-  &__column {
-    flex: 0 0 48%;
-
-    &:first-child {
-      margin-right: 10px;
-    }
-    &:last-child {
-      margin-left: 10px;
-    }
-
-    @media (max-width: 550px) {
-      flex: 1 1 auto;
-      &:first-child {
-        margin-right: 0px;
-      }
-      &:last-child {
-        margin-left: 0px;
-      }
-    }
-  }
-
-  &__block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  &__img {
-    max-width: 100%;
-    max-height: 567px;
-    margin: 0px 0px 30px 0px;
-  }
-
-  &__block-title {
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 500;
-    text-align: left;
-    margin: 0px 0px 96px 0px;
-  }
+	&__body {
+	}
 }

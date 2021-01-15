@@ -5,37 +5,24 @@
 })
 
 <body>
-  <div class="wrapper">
-    @@include('_header.html',{})
-    <main class="page">
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
 
-      <section class="documents _anim-items">
-        <div class='documents__content _container'>
-          <h1 class="documents__title">Наши документы</h1>
-          <div class="documents__body">
-            <div class="documents__column">
-              <a href="documents/zakl.pdf" target="_blank" class="documents__block documents__block_left">
-                <img src="img/documents/zakl.jpg" alt="" class="documents__img">
-                <h3 class="documents__block-title">Заключение ОГИБДД</h3>
-              </a>
-            </div>
-            <div class="documents__column">
-              <div id="lightgallery">
-                <a href="img/documents/license.jpg" class="documents__block">
-                  <img src="img/documents/license.jpg" alt="" class="documents__img">
-                  <div class="documents__block-title">Лицензия</div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+			<section class="documents _anim-items">
+				<div class='documents__content _container'>
+					<h1 class="documents__title">Наши документы</h1>
+					<div class="documents__body">
 
-    </main>
-    @@include('_footer.html',{})
-  </div>
-  @@include('_popup.html',{})
-  @@include('_js.html',{})
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
 </body>
 
 </html>

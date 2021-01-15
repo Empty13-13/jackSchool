@@ -55,7 +55,7 @@ function map(n) {
 				marker.setIcon(icon);
 				map.setCenterWithOffset(marker.getPosition(), 0, 0);
 				setTimeout(function () {
-					baloonstyle();
+
 				}, 10);
 			}
 		})(marker, i));
