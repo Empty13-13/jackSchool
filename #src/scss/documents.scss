@@ -1,5 +1,8 @@
-.documents {
+.wrapper-documents {
 	background-color: #171919;
+}
+
+.documents {
 	padding-top: 225px;
 
 	@media (max-width: $md1+px) {
@@ -45,5 +48,58 @@
 	}
 
 	&__body {
+	}
+
+	&__name-list {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 29px;
+		color: #ffffff;
+
+		@media (max-width: $md1+px) {
+			font-size: 23px;
+		}
+		@media (max-width: $md2+px) {
+			font-size: 22px;
+		}
+		@media (max-width: $md3+px) {
+			font-size: 21px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 19px;
+		}
+	}
+
+	&__name-list-item {
+		list-style: outside;
+		margin: 0px 0px 20px 10px;
+	}
+
+	&__documents-list {
+	}
+
+	&__documents-list-item {
+		margin: 0px 0px 0px 40px;
+
+		a {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 29px;
+			color: #ffffff;
+			text-decoration: underline;
+
+			@media (max-width: $md1+px) {
+				font-size: 19px;
+			}
+			@media (max-width: $md2+px) {
+				font-size: 18px;
+			}
+			@media (max-width: $md3+px) {
+				font-size: 17px;
+			}
+			@media (max-width: $md4+px) {
+				font-size: 16px;
+			}
+		}
 	}
 }

@@ -2215,8 +2215,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-size: 14px;
 }
 
-.documents {
+.wrapper-documents {
   background-color: #171919;
+}
+
+.documents {
   padding-top: 225px;
 }
 
@@ -2227,6 +2230,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-weight: 900;
   text-align: left;
   margin: 0px 0px 96px 0px;
+}
+
+.documents__name-list {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.documents__name-list-item {
+  list-style: outside;
+  margin: 0px 0px 20px 10px;
+}
+
+.documents__documents-list-item {
+  margin: 0px 0px 0px 40px;
+}
+
+.documents__documents-list-item a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .steps {
@@ -3443,6 +3470,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     font-size: 33px;
   }
 
+  .documents__name-list {
+    font-size: 23px;
+  }
+
+  .documents__documents-list-item a {
+    font-size: 19px;
+  }
+
   .steps__title {
     font-size: 33;
     margin: 100px 0px 0px 0px;
@@ -3633,6 +3668,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .documents__title {
     margin: 0px 0px 76px 0px;
     font-size: 31px;
+  }
+
+  .documents__name-list {
+    font-size: 22px;
+  }
+
+  .documents__documents-list-item a {
+    font-size: 18px;
   }
 
   .steps__title {
@@ -4050,6 +4093,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .documents__title {
     margin: 0px 0px 66px 0px;
     font-size: 28px;
+  }
+
+  .documents__name-list {
+    font-size: 21px;
+  }
+
+  .documents__documents-list-item a {
+    font-size: 17px;
   }
 
   .steps__title {
@@ -4519,6 +4570,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .documents__title {
     margin: 0px 0px 56px 0px;
     font-size: 25px;
+  }
+
+  .documents__name-list {
+    font-size: 19px;
+  }
+
+  .documents__documents-list-item a {
+    font-size: 16px;
   }
 
   .steps__title {
