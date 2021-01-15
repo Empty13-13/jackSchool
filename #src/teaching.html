@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Обучение"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('_header.html',{})
+    <main class="page">
+
+      <section class="steps _anim-items">
+        <div class='steps__container _container'>
+          <h3 class="steps__title">Этапы обучения</h3>
+          <div class="steps__links links-steps">
+            <ul class="links-steps__list">
+              <li class="links-steps__block block-links-steps">
+                <div class="block-links-steps__top">
+                  <img src="img/steps/01.svg" alt="" class="block-links-steps__top-img">
+                </div>
+                <div class="block-links-steps__center">
+                  <p class="block-links-steps__center-text"> Заключение договора и ознакомление с документами, далее
+                    выбираем дату начала и процесс обучения запускается.</p>
+                </div>
+              </li>
+              <li class="links-steps__block block-links-steps">
+                <div class="block-links-steps__top">
+                  <img src="img/steps/02.svg" alt="" class="block-links-steps__top-img">
+                </div>
+                <div class="block-links-steps__center">
+                  <p class="block-links-steps__center-text"> Прохождение основных тем по теории, сдача зачёта, после
+                    успешной сдачи которого курсант выходит на вождение. </p>
+                </div>
+              </li>
+              <li class="links-steps__block block-links-steps">
+                <div class="block-links-steps__top">
+                  <img src="img/steps/03.svg" alt="" class="block-links-steps__top-img">
+                </div>
+                <div class="block-links-steps__center">
+                  <p class="block-links-steps__center-text">Вождение. Параллельно курсант проходит оставшиеся темы по
+                    теории.</p>
+                </div>
+              </li>
+              <li class="links-steps__block block-links-steps">
+                <div class="block-links-steps__top">
+                  <img src="img/steps/04.svg" alt="" class="block-links-steps__top-img">
+                </div>
+                <div class="block-links-steps__center">
+                  <p class="block-links-steps__center-text">Внутренний экзамен, после успешной сдачи внутреннего курсант
+                    сдает заключительный экзамен ГИБДД.</p>
+                </div>
+              </li>
+              <li class="links-steps__block block-links-steps">
+                <div class="block-links-steps__top">
+                  <img src="img/steps/05.svg" alt="" class="block-links-steps__top-img">
+                </div>
+                <div class="block-links-steps__center">
+                  <p class="block-links-steps__center-text">Получение водительского удостоверения.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="steps__mini-foot">
+            <p class="steps__note">*Внутренний экзамен принимают сотрудники автошколы, экзамен ГИБДД принимает
+              независимый инспектор, это основное отличие.</p>
+            <a href="#form" class="steps__but but">
+              <div class="steps__but_text but-text">Оставить заявку</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-audience _anim-items">
+        <div class='our-audience__container _container'>
+          <div class="our-audience__column">
+            <div class="our-audience__texts texts-our-audience">
+              <h3 class="texts-our-audience__title">Наша аудитория</h3>
+              <p class="texts-our-audience__text1">Идейные соображения высшего порядка, а также консультация с широким
+                активом требуют от нас анализа дальнейших направлений развития. Не следует, однако забывать, что
+                постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий
+                условий активизации.</p>
+              <p class="texts-our-audience__text2">Идейные соображения высшего порядка, а также дальнейшее развитие
+                различных форм деятельности требуют определения и уточнения соответствующий условий активизации.</p>
+            </div>
+          </div>
+          <div class="our-audience__column">
+            <div class="our-audience__image image-our-audience">
+              <img src="img/our-audience-img.jpg" alt="" class="image-our-audience__img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery _anim-items">
+        <div id="lightgallery" class="gallery__lightgallery lightgallery">
+          <a class="lightgallery__slide" href="img/gallery/1.jpg">
+            <img class="lightgallery__slide_img" src="img/gallery/1.jpg">
+          </a>
+          <a class="lightgallery__slide" href="img/gallery/2.jpg">
+            <img class="lightgallery__slide_img" src="img/gallery/2.jpg">
+          </a>
+          <a class="lightgallery__slide" href="img/gallery/3.jpg">
+            <img class="lightgallery__slide_img" src="img/gallery/3.jpg">
+          </a>
+          <a class="lightgallery__slide" href="img/gallery/4.jpg">
+            <img class="lightgallery__slide_img" src="img/gallery/4.jpg">
+          </a>
+          <a class="lightgallery__slide" href="img/gallery/2.jpg">
+            <img class="lightgallery__slide_img" src="img/gallery/2.jpg">
+          </a>
+          <a class="lightgallery__slide" href="img/gallery/5.jpg">
+            <img class="lightgallery__slide_img" src="img/gallery/5.jpg">
+          </a>
+        </div>
+      </section>
+
+    </main>
+    @@include('_form.html',{})
+    @@include('_footer.html',{})
+  </div>
+  @@include('_popup.html',{})
+  @@include('_js.html',{})
+</body>
+
+</html>

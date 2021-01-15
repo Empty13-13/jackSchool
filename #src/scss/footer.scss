@@ -1,0 +1,123 @@
+//====================================================================================================
+.footer {
+  background-color: #171919;
+
+  &__content {
+    @media (max-width: $md3+px) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+
+  &__row {
+    @media (max-width: $md3+px) {
+      margin: 20px 0px 20px 0px;
+
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 8px 0px;
+
+    img {
+      width: 75px;
+      height: 52px;
+      transition: all 0.3s ease 0s;
+
+      &:hover {
+        width: 85px;
+        height: 60px;
+      }
+    }
+
+    @media (max-width: $md3+px) {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width: $md3+px) {
+      height: 100%;
+    }
+  }
+
+  &__policy {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: underline;
+
+    @media (max-width: $md3+px) {
+      font-size: 11px;
+    }
+
+    @media (max-width: $md4+px) {
+      font-size: 9px;
+      text-align: center;
+      margin-left: 10px;
+    }
+  }
+
+  &__studio {
+    @extend .footer__policy;
+    margin: 20px 0px 42px 0px;
+
+    @media (max-width: $md3+px) {
+      margin: 20px 0px 0px 0px;
+    }
+  }
+}
+
+.menu-footer {
+  margin: 45px 0px 25px 0px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      margin-right: 33px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: $md3+px) {
+      margin: 0px 0px 0px 0px;
+      display: none;
+    }
+  }
+
+  &__link {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+
+    &.active-link {
+      font-weight: 700;
+    }
+
+    &:hover {
+      color: #ffc601;
+      font-size: 14px;
+    }
+  }
+}
+
+//====================================================================================================
