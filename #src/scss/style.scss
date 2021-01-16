@@ -61,6 +61,10 @@ body {
 	display: flex;
 	flex-direction: column;
 
+	&._black {
+		background: #171919;
+	}
+
 	&._loaded {
 	}
 }
@@ -85,13 +89,14 @@ body {
 //@import "datepicker";
 @import "lightgallery";
 //@import "pagging";
-//@import "popup";
+@import "popup";
 @import "header";
 @import "footer";
 @import "documents";
 @import "teaching";
 @import "contacts";
 @import "home";
+@import "cars";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
