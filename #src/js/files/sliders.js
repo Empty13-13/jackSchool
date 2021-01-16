@@ -32,7 +32,7 @@ if (sliders) {
 	sliders_bild_callback();
 }
 
-function sliders_bild_callback(params) { }
+function sliders_bild_callback(params) {}
 
 let sliderScrollItems = document.querySelectorAll('._swiper_scroll');
 if (sliderScrollItems.length > 0) {
@@ -57,9 +57,9 @@ if (sliderScrollItems.length > 0) {
 }
 
 
-function sliders_bild_callback(params) { }
+function sliders_bild_callback(params) {}
 
-let slider_about = new Swiper('.about__slider', {
+let slider_popup1 = new Swiper('.block-popup__slider', {
 	/*
 	effect: 'fade',
 	autoplay: {
@@ -69,7 +69,8 @@ let slider_about = new Swiper('.about__slider', {
 	*/
 	observer: true,
 	observeParents: true,
-	slidesPerView: 1,
+	obervSlideChildren: true,
+	slidesPerView: 2,
 	spaceBetween: 0,
 	autoHeight: true,
 	speed: 800,
@@ -79,15 +80,15 @@ let slider_about = new Swiper('.about__slider', {
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	//pagination: {
-	//	el: '.slider-quality__pagging',
-	//	clickable: true,
-	//},
-	// Arrows
-	navigation: {
-		nextEl: '.about__more .more__item_next',
-		prevEl: '.about__more .more__item_prev',
+	pagination: {
+		el: '.slider-quality__pagging',
+		clickable: true,
 	},
+	// Arrows
+	//navigation: {
+	//	nextEl: '.about__more .more__item_next',
+	//	prevEl: '.about__more .more__item_prev',
+	//},
 	/*
 	breakpoints: {
 		320: {
