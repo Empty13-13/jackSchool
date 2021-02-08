@@ -83,6 +83,7 @@
 			line-height: 29px;
 			color: #ffffff;
 			text-decoration: underline;
+			transition: all 0.3s ease 0s;
 
 			@media (max-width: $md1+px) {
 				font-size: 19px;
@@ -95,6 +96,10 @@
 			}
 			@media (max-width: $md4+px) {
 				font-size: 16px;
+			}
+
+			&:hover {
+				color: #ffc601;
 			}
 		}
 	}

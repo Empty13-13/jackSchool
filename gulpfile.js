@@ -1,5 +1,8 @@
 //let replace = require('gulp-replace'); //.pipe(replace('bar', 'foo'))
-let { src, dest } = require("gulp");
+let {
+	src,
+	dest
+} = require("gulp");
 let fs = require('fs');
 let gulp = require("gulp");
 let browsersync = require("browser-sync").create();
@@ -51,6 +54,7 @@ let path = {
 	},
 	clean: "./" + project_name + "/"
 };
+
 function browserSync(done) {
 	browsersync.init({
 		server: {
@@ -60,6 +64,7 @@ function browserSync(done) {
 		port: 3000,
 	});
 }
+
 function html() {
 	return src(path.src.html, {})
 		.pipe(plumber())
@@ -68,6 +73,7 @@ function html() {
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream());
 }
+
 function css() {
 	return src(path.src.css, {})
 		.pipe(plumber())
@@ -84,12 +90,10 @@ function css() {
 				cascade: true
 			})
 		)
-		.pipe(webpcss(
-			{
-				webpClass: "._webp",
-				noWebpClass: "._no-webp"
-			}
-		))
+		.pipe(webpcss({
+			webpClass: "._webp",
+			noWebpClass: "._no-webp"
+		}))
 		.pipe(dest(path.build.css))
 		.pipe(clean_css())
 		.pipe(
@@ -100,12 +104,13 @@ function css() {
 		.pipe(dest(path.build.css))
 		.pipe(browsersync.stream());
 }
+
 function js() {
 	return src(path.src.js, {})
 		.pipe(plumber())
 		.pipe(fileinclude())
 		.pipe(gulp.dest(path.build.js))
-		.pipe(uglify(/* options */))
+		.pipe(uglify( /* options */ ))
 		.pipe(
 			rename({
 				suffix: ".min",
@@ -115,13 +120,14 @@ function js() {
 		.pipe(dest(path.build.js))
 		.pipe(browsersync.stream());
 }
+
 function images() {
 	return src(path.src.images)
 		.pipe(newer(path.build.images))
 		.pipe(
 			imagemin([
 				webp({
-					quality: 75
+					quality: 99
 				})
 			])
 		)
@@ -136,13 +142,16 @@ function images() {
 		.pipe(
 			imagemin({
 				progressive: true,
-				svgoPlugins: [{ removeViewBox: false }],
+				svgoPlugins: [{
+					removeViewBox: false
+				}],
 				interlaced: true,
-				optimizationLevel: 3 // 0 to 7
+				optimizationLevel: 0 // 0 to 7
 			})
 		)
 		.pipe(dest(path.build.images))
 }
+
 function favicon() {
 	return src(path.src.favicon)
 		.pipe(plumber())
@@ -153,6 +162,7 @@ function favicon() {
 		)
 		.pipe(dest(path.build.html))
 }
+
 function fonts_otf() {
 	return src('./' + src_folder + '/fonts/*.otf')
 		.pipe(plumber())
@@ -161,6 +171,7 @@ function fonts_otf() {
 		}))
 		.pipe(gulp.dest('./' + src_folder + +'/fonts/'));
 }
+
 function fonts() {
 	src(path.src.fonts)
 		.pipe(plumber())
@@ -171,6 +182,7 @@ function fonts() {
 		.pipe(dest(path.build.fonts))
 		.pipe(browsersync.stream());
 }
+
 function fontstyle() {
 	let file_content = fs.readFileSync(src_folder + '/scss/fonts.scss');
 	if (file_content == '') {
@@ -190,10 +202,13 @@ function fontstyle() {
 		})
 	}
 }
-function cb() { }
+
+function cb() {}
+
 function clean() {
 	return del(path.clean);
 }
+
 function watchFiles() {
 	gulp.watch([path.watch.html], html);
 	gulp.watch([path.watch.css], css);
