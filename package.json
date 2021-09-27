@@ -1,52 +1,33 @@
 {
-  "name": "fls_start_gulp",
-  "version": "1.0.0",
-  "description": "Start template with Gulp",
-  "author": "FLS",
-  "private": true,
-  "license": "GNU General Public License (GPL)",
-  "devDependencies": {
-    "browser-sync": "latest",
-    "del": "latest",
-    "gulp": "latest",
-    "gulp-autoprefixer": "latest",
-    "gulp-clean-css": "latest",
-    "gulp-file-include": "latest",
-    "gulp-fonter": "latest",
-    "gulp-group-css-media-queries": "latest",
-    "gulp-imagemin": "latest",
-    "gulp-media-queries-splitter": "latest",
-    "gulp-newer": "latest",
-    "gulp-plumber": "latest",
-    "gulp-rename": "latest",
-    "gulp-replace": "latest",
-    "gulp-responsive": "latest",
-    "gulp-sass": "latest",
-    "gulp-ttf2woff": "latest",
-    "gulp-ttf2woff2": "latest",
-    "gulp-uglify-es": "latest",
-    "gulp-webp-html": "^1.0.2",
-    "gulp-webpcss": "^1.1.1",
-    "imagemin-webp": "latest",
-    "node-normalize-scss": "^8.1.2",
-    "transform-runtime": "0.0.0",
-    "webp-converter": "^2.2.3"
-  },
-  "dependencies": {
-    "node-sass": "^4.14.1",
-    "normalize-scss": "^7.0.1"
-  },
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Empty13-13/jackSchool.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/Empty13-13/jackSchool/issues"
-  },
-  "homepage": "https://github.com/Empty13-13/jackSchool#readme"
+	"name": "fls_start_gulp",
+	"version": "1.0.0",
+	"description": "Start template with Gulp",
+	"author": "FLS",
+	"private": true,
+	"license": "GNU General Public License (GPL)",
+	"devDependencies": {
+		"browser-sync": "latest",
+		"del": "latest",
+		"gulp": "latest",
+		"gulp-autoprefixer": "latest",
+		"gulp-clean-css": "latest",
+		"gulp-file-include": "latest",
+		"gulp-fonter": "latest",
+		"gulp-group-css-media-queries": "latest",
+		"gulp-imagemin": "7.1.0",
+		"gulp-newer": "latest",
+		"gulp-plumber": "latest",
+		"gulp-rename": "latest",
+		"gulp-sass": "latest",
+		"gulp-ttf2woff": "latest",
+		"gulp-ttf2woff2": "latest",
+		"gulp-uglify-es": "latest",
+		"gulp-version-number": "latest",
+		"gulp-webp-html": "latest",
+		"gulp-webpcss": "latest",
+		"imagemin-webp": "latest",
+		"sass": "latest",
+		"transform-runtime": "0.0.0",
+		"webp-converter": "2.2.3"
+	}
 }

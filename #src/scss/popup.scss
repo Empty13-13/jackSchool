@@ -389,6 +389,9 @@
 		img {
 			max-width: 100%;
 			width: 210px;
+			height: 140px;
+			object-fit: cover;
+			object-position: center;
 		}
 	}
 

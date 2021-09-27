@@ -10,6 +10,7 @@
 
   &._active {
     background-color: #191717;
+    overflow: hidden;
   }
 
   @media (min-width:555px) {
@@ -34,6 +35,11 @@
     justify-content: center;
     align-items: center;
     margin-right: 3%;
+    
+    &._hidden {
+      visibility: hidden;
+      opacity: 0;
+    }
 
     img {
       width: 75px;
@@ -149,61 +155,39 @@
     &::before {
       content: '';
       position: absolute;
-      background: url('../img/menu-bg.svg') top right/84% 200% no-repeat;
-      width: 100%;
-      height: 100%;
+      //background: url('../img/menu-bg.svg') top right/84% 200% no-repeat;
+      background: url("../img/main/bg-cut.svg") top right / cover no-repeat;
+      width: 80%;
+      height: 150%;
       z-index: -1;
       top: 0;
       right: 0;
 
       @media (max-width: 1440px) {
-        background: url('../img/menu-bg.svg') top right/87% 200% no-repeat;
+        background: url('../img/menu-bg.svg') top right / cover no-repeat;
+      }
+      
+      @media (max-width:900px){
+        width: 60%;
+        height: 100%;
       }
 
-      @media (max-width: 1365px) {
-        background: url('../img/menu-bg.svg') top right / 88% 200% no-repeat;
-      }
-
-      @media (max-width: 1320px) {
-        background: url('../img/menu-bg.svg') top right / 90% 200% no-repeat;
-      }
-
-      @media (max-width: 1265px) {
-        background: url('../img/menu-bg.svg') top right / 91.5% 200% no-repeat;
-      }
-
-      @media (max-width: 1220px) {
-        background: url('../img/menu-bg.svg') top right / 85% 200% no-repeat;
-      }
-
-      @media (max-width: 1075px) {
-        background: url('../img/menu-bg.svg') top right / 87% 200% no-repeat;
-      }
-
-      @media (max-width: $md2+px) {
-        background: url('../img/menu-bg.svg') top right / 89% 200% no-repeat;
-      }
-
-      @media (max-width: 925px) {
-        background: url('../img/menu-bg.svg') top right / 90% 200% no-repeat;
-      }
-
-      @media (max-width: 900px) {
-        background: url('../img/menu-bg.svg') 5% 0%/100% 200% no-repeat;
-      }
-
+      //@media (max-width: $md3+px) {
+      //  background: url("../img/main/bg-cut.svg") top right/80% 200% no-repeat;
+      //}
+      
       @media (max-width: $md3+px) {
-        background: url("../img/main/bg-cut.svg") top right/80% 200% no-repeat;
+        background: url("../img/main/bg-cut.svg") top right / cover no-repeat;
+        width: 70%;
       }
+      
 
       @media (max-width: $md4+px) {
         background: url("../img/main/bg-cut.svg") 100% 100% no-repeat;
       }
     }
   }
-
-
-
+  
   &__icon {}
 
   &__body {
@@ -247,7 +231,7 @@
     white-space: nowrap;
     display: flex;
     justify-content: space-between;
-    align-items: space-between;
+    align-items: center;
     margin: 0px 5px;
 
     li {
@@ -258,7 +242,8 @@
 
     @media (max-width:900px) {
       flex-direction: column;
-      margin-right: 25px;
+      margin: 0;
+      margin-bottom: 25px;
 
       li {
         margin-top: 15px;
@@ -286,15 +271,15 @@
       background-color: #171919;
       color: #ffffff;
     }
+    
+    @media (max-width:1220px){
+        padding: 10px 14px;
+    }
 
     @media (max-width:900px) {
       font-size: 22px;
-    }
-  }
-
-  @media (max-width:1220px) {
-    &__link {
-      padding: 10px 14px;
+      padding: 0;
+      margin: 0;
     }
   }
 }
@@ -348,9 +333,13 @@
     z-index: 5;
 
     &__links {
-      margin-right: 70px/950px*100%;
+      margin-right: 0;
       max-width: 40px;
       max-height: 40px;
+      
+      &:last-child{
+        margin-right: 0;
+      }
     }
 
     svg {
@@ -428,7 +417,6 @@
     &._active {
       span {
         transform: scale(0);
-        background-color: #fff;
 
         &:first-child {
           transform: rotate(-45deg);

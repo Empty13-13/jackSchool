@@ -42,7 +42,6 @@
 		@media (max-width: 1180px) {
 			justify-content: center;
 			align-items: center;
-			flex-direction: column;
 		}
 
 		@media (max-width: $md3+px) {
@@ -76,7 +75,7 @@
 
 	@media (max-width: $md4+px) {
 		min-width: 300px;
-		min-height: 200px;
+		flex: auto;
 	}
 
 	&__body {

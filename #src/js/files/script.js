@@ -90,3 +90,13 @@ lightGallery(document.querySelector('#lightgallery8'), {
 	mousewheel: true,
 	preload: 4,
 });
+lightGallery(document.querySelector('#lightgallery9'), {
+	download: true,
+	mousewheel: true,
+	preload: 4,
+});
+lightGallery(document.querySelector('#lightgallery10'), {
+	download: true,
+	mousewheel: true,
+	preload: 4,
+});
